@@ -10,20 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,700&family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/browse/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
   </head>
   <body>
     <div id="root"></div>
+
     <script type="text/babel">
-      class App extends React.componet {
+      class App extends React.Component {
         render() {
           return (
             <div class="container">
               <div class="frame">
                 <section class="header">
-                  <button class="header-btn">Add</button>
+                  <button class="header-btn main-black-color">Add</button>
                   <h1 class="header-title">Todo List</h1>
                   <button class="header-btn main-red-color">Clear</button>
                 </section>
@@ -35,33 +36,36 @@
                   </form>
                 </section>
 
-                <section class="tudos">
+                <section class="todos">
                   <div class="todo">
-                    <span class="tudo-text">Learning React</span>
+                    <span class="todo-text">Learning react</span>
                   </div>
                   <div class="todo">
-                    <span class="tudo-text">Learning React</span>
+                    <span class="todo-text">Learning react</span>
                   </div>
                   <div class="todo">
-                    <span class="tudo-text">Learning React</span>
+                    <span class="todo-text">Learning react</span>
                   </div>
                   <div class="todo">
-                    <span class="tudo-text">Learning React</span>
+                    <span class="todo-text">Learning react</span>
                   </div>
                   <div class="todo">
-                    <span class="tudo-text">Learning React</span>
+                    <span class="todo-text">Learning react</span>
                   </div>
                   <div class="todo">
-                    <span class="tudo-text">Learning React</span>
+                    <span class="todo-text">Learning react</span>
                   </div>
                   <div class="todo">
-                    <span class="tudo-text">Learning React</span>
+                    <span class="todo-text">Learning react</span>
                   </div>
                   <div class="todo">
-                    <span class="tudo-text">Learning React</span>
+                    <span class="todo-text">Learning react</span>
                   </div>
                   <div class="todo">
-                    <span class="tudo-text">Learning React</span>
+                    <span class="todo-text">Learning react</span>
+                  </div>
+                  <div class="todo">
+                    <span class="todo-text">Learning react</span>
                   </div>
                 </section>
               </div>
@@ -69,6 +73,7 @@
           );
         }
       }
+
       ReactDOM.render(<App />, document.getElementById("root"));
     </script>
   </body>
